@@ -12,6 +12,7 @@ const Countries = () => {
   return (
     <div>
       <h1>This is Countries its own file. {countries.length}</h1>
+      <h2>All the country information is here.</h2>
       <div className="countries-container">
         {countries.map((country) => (
           <Country key={country.alpha2Code} country={country}></Country>
