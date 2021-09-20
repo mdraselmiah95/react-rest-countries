@@ -1,15 +1,12 @@
-import { useEffect, useState } from "react";
 import "./App.css";
 
 function App() {
-  return (
-    <div className="App">
-      <Countries></Countries>
-    </div>
-  );
+  return <div className="App"></div>;
 }
 
-function Countries() {
+// new way of declaring component
+
+/* function Countries() {
   const [countries, setCountries] = useState([]);
 
   useEffect(() => {
@@ -37,4 +34,7 @@ function Country(props) {
     </div>
   );
 }
+
+ */
+
 export default App;
