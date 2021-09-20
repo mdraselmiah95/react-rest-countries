@@ -22,6 +22,17 @@ function Countries() {
     <div>
       <h2>Traveling the world.</h2>
       <h4>Country Available: {countries.length}</h4>
+      {countries.map((country) => (
+        <Country name={country.name}></Country>
+      ))}
+    </div>
+  );
+}
+
+function Country(props) {
+  return (
+    <div>
+      <h2>Name: {props.name}</h2>
     </div>
   );
 }
