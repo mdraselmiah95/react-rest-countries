@@ -1,7 +1,9 @@
+.nav {
+  margin: 15px 0;
+}
 .nav a {
   text-decoration: none;
-  margin: 6px 7px;
-  padding: 10px 8px;
+  padding: 10px 15px;
   color: aqua;
   font-weight: bolder;
 }
