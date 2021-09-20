@@ -12,15 +12,16 @@ const Countries = () => {
     <div>
       <h1>This is Countries its own file. {countries.length}</h1>
       {countries.map((country) => (
-        <Country
-          country={country}
-          name={country.name}
-          capital={country.capital}
-          population={country.population}
-        ></Country>
+        <Country country={country}></Country>
       ))}
     </div>
   );
 };
 
+/* 
+           name={country.name}
+          capital={country.capital}
+          population={country.population}
+
+*/
 export default Countries;
