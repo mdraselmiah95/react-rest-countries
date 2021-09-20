@@ -14,7 +14,7 @@ const Countries = () => {
       <h1>This is Countries its own file. {countries.length}</h1>
       <div className="countries-container">
         {countries.map((country) => (
-          <Country country={country}></Country>
+          <Country key={country.alpha2Code} country={country}></Country>
         ))}
       </div>
     </div>
