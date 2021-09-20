@@ -2,14 +2,14 @@ import React from "react";
 import "./Country.css";
 
 const Country = (props) => {
+  const { name, flag, capital, population } = props.country;
   //   console.log(props.country);
   return (
     <div className="Country">
-      <h4>Name: {props.country.name}</h4>
-      <img src={props.country.flag} alt="" />
+      <h4>Name: {name}</h4>
+      <img src={flag} alt="" />
       <h5>
-        Capital is: {props.country.capital} and Population is:{" "}
-        {props.country.population}
+        Capital is: {capital} and Population is: {population}
       </h5>
     </div>
   );
