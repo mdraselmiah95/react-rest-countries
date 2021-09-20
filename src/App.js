@@ -11,14 +11,17 @@ function App() {
 
 function Countries() {
   const [countries, setCountries] = useState([]);
+
   useEffect(() => {
     fetch("https://restcountries.eu/rest/v2/all")
       .then((res) => res.json())
       .then((data) => setCountries(data));
   }, []);
+
   return (
     <div>
       <h2>Traveling the world.</h2>
+      <h4>Country Available: {countries.length}</h4>
     </div>
   );
 }
